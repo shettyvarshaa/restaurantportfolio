@@ -1,7 +1,8 @@
 .app__navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*Align them horizontally*/
+    align-items: center; /*Align them vertically*/
     background: var(--color-black);
     padding : 1rem 2rem;
 }
@@ -21,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
+    list-style: none; /*removing bullet points*/
 }
 
 .app__navbar-links li{
@@ -30,7 +31,7 @@
 }
 
 .app__navbar-links li:hover{
-    color : var(--color-gray)
+    color : var(--color-grey)
 }
 
 .app__navbar-login{
@@ -52,7 +53,7 @@
 .app__navbar-login div{
     width : 1px;
     height: 30px;
-    background-color: var(--color-gray);
+    background-color: var(--color-grey);
 }
 
 .app__navbar-smallscreen {
@@ -108,6 +109,20 @@
 
 }
 
+@media screen and (max-width: 1150px){
+    .app__navbar-links{
+        display : none;
+    }
+    .app__navbar-smallscreen{
+        display : flex;
+    }
+
+
+    .app__navbar-smallscreen{
+        display : flex;
+    }
+}
+
 @media screen and (max-width: 650px){
     .app__navbar{
         padding : 1rem;
@@ -123,18 +138,4 @@
 
 .app__navbar-logo img{
     width: 110px;
-}
-
-@media screen and (max-width: 1150px){
-    .app__navbar-links{
-        display : none;
-    }
-    .app__navbar-smallscreen{
-        display : flex;
-    }
-
-
-    .app__navbar-smallscreen{
-        display : flex;
-    }
 }
