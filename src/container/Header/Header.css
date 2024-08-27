@@ -19,11 +19,11 @@
 
 @media screen and (max-width: 650px) {
     .app__header-h1 {
-        font-size: 45px; /* Adjust font size for smaller screens */
+        font-size: 45px; /* Adjusted font size for smaller screens */
         line-height: 58px;
     }
     
     .app__header-img img {
-        width: 100%; /* Ensure the image scales appropriately on small screens */
+        width: 100%; /* Ensuring the image scales appropriately on small screens */
     }
 }
