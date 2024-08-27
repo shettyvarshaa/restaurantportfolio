@@ -9,8 +9,21 @@
     text-transform: uppercase;
     line-height: 117px;
     font-size:90px;
+
 }
 
 .app__header-img img{
     width: 80%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .app__header-h1 {
+        font-size: 45px; /* Adjust font size for smaller screens */
+        line-height: 58px;
+    }
+    
+    .app__header-img img {
+        width: 100%; /* Ensure the image scales appropriately on small screens */
+    }
 }
